@@ -1,0 +1,91 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "%%writefile my_program.py\n",
+        "import random\n",
+        "\n",
+        "words = [\"python\", \"computer\", \"developer\", \"programming\", \"machine\"]\n",
+        "\n",
+        "word = random.choice(words)\n",
+        "guessed_letters = []\n",
+        "incorrect_guesses = 0\n",
+        "max_incorrect = 6\n",
+        "\n",
+        "print(\"🎮 Welcome to Hangman!\")\n",
+        "print(\"Guess the word one letter at a time.\")\n",
+        "print(\"You have 6 incorrect guesses.\")\n",
+        "\n",
+        "while incorrect_guesses < max_incorrect:\n",
+        "    display_word = \"\"\n",
+        "\n",
+        "    for letter in word:\n",
+        "        if letter in guessed_letters:\n",
+        "            display_word += letter + \" \"\n",
+        "        else:\n",
+        "            display_word += \"_ \"\n",
+        "\n",
+        "    print(\"\\nWord:\", display_word)\n",
+        "\n",
+        "    if all(letter in guessed_letters for letter in word):\n",
+        "        print(\"🎉 Congratulations! You guessed the word!\")\n",
+        "        break\n",
+        "\n",
+        "    guess = input(\"Enter a letter: \").lower()\n",
+        "\n",
+        "    if len(guess) != 1 or not guess.isalpha():\n",
+        "        print(\"Please enter one letter only.\")\n",
+        "        continue\n",
+        "\n",
+        "    if guess in guessed_letters:\n",
+        "        print(\"You already guessed that letter.\")\n",
+        "        continue\n",
+        "\n",
+        "    guessed_letters.append(guess)\n",
+        "\n",
+        "    if guess in word:\n",
+        "        print(\"✅ Correct guess!\")\n",
+        "    else:\n",
+        "        incorrect_guesses += 1\n",
+        "        print(\"❌ Wrong guess!\")\n",
+        "        print(\"Incorrect guesses:\", incorrect_guesses, \"/\", max_incorrect)\n",
+        "\n",
+        "else:\n",
+        "    print(\"\\n💀 Game Over!\")\n",
+        "    print(\"The word was:\", word)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CnSW1-gO3xR4",
+        "outputId": "923f5623-6a22-4031-c93e-b377c826838b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Writing my_program.py\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
