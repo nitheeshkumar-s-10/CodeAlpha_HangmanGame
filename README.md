@@ -40,13 +40,11 @@ git clone
 
 2. Open the project folder
 
-cd 
+cd https://github.com/nitheeshkumar-s-10/CodeAlpha_HangmanGame/tree/main
 
 3. Run the Python file
 
 python hangman.py
-
-«The filename may be different depending on the file uploaded to the repository.»
 
 📂 Project Structure
 
