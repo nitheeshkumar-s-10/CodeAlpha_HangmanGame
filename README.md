@@ -36,11 +36,11 @@ The player has to guess the hidden word by entering letters. The game provides a
 
 1. Clone the repository
 
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone 
 
 2. Open the project folder
 
-cd <PROJECT_FOLDER>
+cd 
 
 3. Run the Python file
 
