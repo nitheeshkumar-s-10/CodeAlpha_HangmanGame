@@ -1,86 +1,41 @@
-🎮 Hangman Game in Python
+Hangman Game 🎮
 
-A simple and interactive Hangman Game developed using Python as part of the CodeAlpha Python Programming Internship.
+This is a simple Hangman Game built using Python as part of the CodeAlpha Python Programming Internship.
 
-The player has to guess the hidden word by entering letters. The game provides a limited number of attempts, and the player wins by guessing the complete word before running out of attempts.
+Features
 
-📌 Features
+- Randomly selects a word
+- Guess the word one letter at a time
+- Allows 6 incorrect guesses
+- Checks repeated guesses
+- Shows whether the guess is correct or wrong
+- Displays the word when the game is over
 
-- 🎯 Random word selection
-- 🔤 Letter-by-letter word guessing
-- ❤️ Limited number of attempts
-- ✅ Displays correctly guessed letters
-- ❌ Handles incorrect guesses
-- 🚫 Prevents repeated guesses
-- 🏆 Win and lose conditions
-- 💻 Simple command-line interface
+Technologies Used
 
-🛠️ Technologies Used
+- Python
+- Random module
 
-- Python 3
-- Python built-in libraries
+How to Run
 
-🎮 How to Play
+Run the following command:
 
-1. Run the Python program.
-2. A random word will be selected.
-3. The hidden word will be displayed using underscores.
-4. Enter one letter at a time.
-5. If the letter is correct, it will be revealed.
-6. If the letter is incorrect, you lose an attempt.
-7. Continue guessing until:
-   - You guess the complete word → You Win 🎉
-   - You use all available attempts → Game Over ❌
+python Hangman_Game_CodeAlpha.py
 
-🚀 How to Run
+Words Used
 
-1. Clone the repository
+- Python
+- Computer
+- Developer
+- Programming
+- Machine
 
-git clone 
+Internship
 
-2. Open the project folder
+CodeAlpha Python Programming Internship
 
-cd https://github.com/nitheeshkumar-s-10/CodeAlpha_HangmanGame/tree/main
-
-3. Run the Python file
-
-python hangman.py
-
-📂 Project Structure
-
-Hangman-Game/
-│
-├── hangman.py
-└── README.md
-
-💡 Learning Outcomes
-
-Through this project, I practiced:
-
-- Python variables and data types
-- Conditional statements
-- Loops
-- Functions
-- Lists and strings
-- User input handling
-- Random selection
-- Basic game logic
-- Error and input validation
-
-🎓 Internship
-
-This project was developed as part of the CodeAlpha Python Programming Internship.
-
-Internship Domain: Python Programming
 Project: Hangman Game
 
-👨‍💻 Author
+Author
 
 Nitheesh Kumar S.
-
-- GitHub: github.com/nitheeshkumar-s-10
-- LinkedIn: linkedin.com/in/nitheesh-kumar-s
-
-⭐ Acknowledgement
-
-Thanks to CodeAlpha for providing the opportunity to develop practical Python programming projects and improve programming skills through hands-on experience.
